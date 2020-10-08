@@ -102,7 +102,7 @@ function resetGame() {
 				reset[i].disabled = false;
 		}
 		ul.innerHTML = '';
-		addPhraseToDisplay(phraseArray);
+		addPhraseToDisplay(getRandomPhraseAsArray(phrases));
 		let hearts = document.getElementsByTagName('img');
 		for(let i = 0; i < hearts.length; i++) {
 				let tries = document.querySelectorAll('.tries');
